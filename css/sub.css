@@ -1,69 +1,30 @@
-.wrap {
-  padding: 70px;
-  padding-top: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-.wrap .home img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-}
+html, body { width: 100%; }
 
-.wrap .title_box {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 350px;
-  height: 350px;
-}
+.wrap h2 { opacity: 0; display: block; width: 100%; height: 15rem; line-height: 20rem; text-align: center; color: transparent; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; background-image: url(../images/common_titlebg.png); background-size: 300%; background-position: 45% 10%; font-family: Montserrat; }
 
-.wrap .title_box .bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(0.001deg);
-          transform: translate(-50%, -50%) rotate(0.001deg);
-  width: 5px;
-  height: 5px;
-  border-radius: 100%;
-  background-image: url(../images/common_titlebg.png);
-  background-size: 256px;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-}
+.wrap h2.active { opacity: 1; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
 
-.wrap .title_box .bg.active {
-  width: 300px;
-  height: 300px;
-  border-radius: 0;
-  -webkit-transform: translate(-50%, -50%) rotate(0.001deg);
-          transform: translate(-50%, -50%) rotate(0.001deg);
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
-}
+/* ======================only desktop=========================*/
+@media screen and (min-width: 1024px) { .wrap { padding: 2rem; padding-top: 0; }
+  .wrap .home img { position: absolute; top: 2rem; left: 2rem; width: 40px; }
+  .wrap h2 { margin-bottom: 50px; }
+  .wrap h2.active { font-size: 3rem; } }
 
-.wrap .title_box h2 {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-left: 5px;
-  width: 100%;
-  text-align: center;
-}
+/* ======================only desktop=========================*/
+/* ======================tablet & moblie=========================*/
+@media screen and (max-width: 1023px) { .wrap { padding: 2rem; padding-top: 0; }
+  .wrap .home img { position: absolute; top: 2rem; left: 2rem; width: 40px; }
+  .wrap h2 { margin-bottom: 50px; }
+  .wrap h2.active { font-size: 3rem; } }
 
-.wrap .title_box h2.active {
-  opacity: 1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
+/* ======================tablet & moblie=========================*/
+/* ======================only mobile==========================*/
+@media screen and (max-width: 767px) { .wrap { padding: 1rem; padding-top: 0; }
+  .wrap .home img { position: absolute; top: 2rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 40px; }
+  .wrap h2 { margin-bottom: 0; }
+  .wrap h2.active { font-size: 2rem; } }
+
+/* ======================only mobile==========================*/

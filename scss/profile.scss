@@ -15,18 +15,19 @@ $engfont :'Montserrat', sans-serif;
 $korfont : 'S-CoreDream-3Light';
 $color-primary: #000;
 $color-secondary: #888;
-$titlesize : 21px;
-$textsize : 17px;
+$titlesize : 1.3rem;
+$textsize : 1rem;
 
 *{font-family: $korfont;}
 html,body{
     background-color: #fff;
 }
 
-        
-        
 
-
+    
+ 
+/* ======================desktop==========================*/
+@media screen and (min-width:1024px){
     .intro{
         display: flex;
         
@@ -41,7 +42,7 @@ html,body{
         width: calc( 100% - 500px ); min-height: 300px; background-color: #fff;
         margin-left: 100px; padding: 30px; border-radius: 50px; border-top-left-radius: 0; border-bottom-right-radius: 0; box-shadow:(1px 1px 25px  rgba(63, 26, 68, 0.3)); line-height: 30px;
         img{
-            float: left; width: 20px; height: 30px; clear: left; margin-right: 10px;
+            float: left; width: 1rem; height: 1.2rem; clear: left; margin-right: 10px;
         }
         h3{
             font-size: $titlesize;
@@ -51,4 +52,78 @@ html,body{
             display:block; font-size: $textsize;
         }
     }
- 
+}
+/* ======================desktop==========================*/
+
+    
+/* ======================tablet & moblie==========================*/
+@media screen and (max-width:1023px){
+    .intro{
+        margin: 0 auto; text-align: center;
+        
+        .myphoto{
+            width: 300px; height: 300px; border-radius: 150px; 
+            box-shadow:(1px 1px 25px  rgba(63, 26, 68, 0.5));
+            transform:rotate(-12deg); 
+        }
+    }
+    
+    .text{
+        background-color: #fff;
+        margin: 4rem; padding: 30px;  line-height: 30px;
+        img{
+            float: left; width: 1rem; height: 1.2rem; clear: left; margin-right: 1rem;
+        }
+        h3{
+            font-size: $titlesize;
+            margin-bottom: 20px;
+        }
+        .contact{
+            display: flex;
+            div{
+                flex: 1;
+            }
+        }
+        p{
+            display:block; font-size: $textsize;  text-align: left;
+        }
+    }
+}
+/* ======================tablet & moblie==========================*/
+
+
+/* ======================only mobile==========================*/
+@media screen and (max-width: 767px){
+    .intro{
+        margin: 0 auto; text-align: center;
+        
+        .myphoto{
+            width: 15rem; height: 15rem; border-radius: 150px; 
+            box-shadow:(1px 1px 25px  rgba(63, 26, 68, 0.5));
+            transform:rotate(-12deg); 
+        }
+    }
+    .text{
+        background-color: #fff;
+        padding:0; margin: 1rem; margin-top: 2rem; line-height: 25px;
+        img{
+            float: left; width: 1.2rem; height: 1.5rem; clear: left; margin-right: 1rem;
+        }
+        h3{
+            font-size: $titlesize;
+            margin-bottom: 20px;
+        }
+        .contact{
+            display: block;
+            div{
+                flex: 1;
+            }
+        }
+        p{
+            display:block; font-size: $textsize;  text-align: left;
+        }
+    }
+    
+    
+}
+/* ======================only mobile==========================*/

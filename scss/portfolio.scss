@@ -4,79 +4,245 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff"); font-weight: normal; font-style: normal; }
+
 
 $engfont :'Montserrat', sans-serif;
 $korfont : 'S-CoreDream-3Light';
 $color-primary: #000;
 $color-secondary: #888;
-$titlesize : 21px;
-$textsize : 17px;
+$titlesize : 1.5rem;
+$textsize : 1rem;
 $margin : 40px;
 
-*{font-family: $korfont;}
-html,body{
-    background-color: rgba(219, 219, 219, 0.534);
-}
+*{font-family: $engfont;}
 
-.project_list{
-    width: 100%;
-    padding-top: 50px;
-    text-align: center; 
-    li{
-        margin: 20px auto;
-        a{
-            display: block;
-            width: 600px; height: 100%; text-align: 30px; background-color: rgba(255, 255, 255, 0.4); margin: 0 auto; border: 3px solid #fff;
-            font-size: 25px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-            &:hover{
-                color: #888;
-            }
-        }
-    }
-}
-.cbtn{
-    position: absolute; top:-50px; left:15%;
-    width: 40px; transition: 0.3s; 
-    &.active{
-        position: absolute; top: 15px; transition-delay: 0.3s;
-    }
-}
 
-.project_intro > li{
-    position: absolute; top: 0; right: -80%;
-    display:block; width: 80%; height: 100%; padding-bottom: $margin; box-sizing: border-box; background-color: #fff; overflow: auto; text-align: center;
-    transition: 0.5s;
-    &.active{
-        position: absolute; right: 0;
-    }
-    h3{
-        display: block;
-        font-size: $titlesize;
-        padding-top: $margin; padding-bottom: $margin; background-color: #aaa; color: #fff; letter-spacing: 8px;
-    }
-    .used{
-        display: flex;
-        padding: $margin;
+
+
+
+/* ======================desktop==========================*/
+@media screen and (min-width:1024px){
+    .project_list{
+        width: 100%;
+        padding-top: 50px;
+        text-align: center; 
         li{
-            flex: 1;
-            h4{
-                color: #000;
-                margin-bottom: 10px;
-            }
-            p{
-                color: #333;
+            margin: 20px auto;
+            a{
+                display: block;
+                width: 600px; height: 100%; text-align: 30px; background-color: rgba(255, 255, 255, 0.4); margin: 0 auto; border: 3px solid #fff;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.2); font-size: $textsize;
+                &:hover{
+                    color: #888;
+                }
+                .sub{
+                    font-size: $titlesize;
+                }
             }
         }
-        
     }
-    a{
-        display: block; margin: 0 auto;
-        width: 300px; height: 50px; font-size: $textsize; line-height: 50px; background-color: #aaa; color: #fff;
+
+    .cbtn {
+        position: absolute; top:-50px; left:13%;
+        width: 40px; transition: 0.3s; 
+        &.active{
+            position: absolute; top: 15px; transition-delay: 0.3s;
+        }
+        .return img{
+            width: 100%;
+        }
+        .mobilereturn{
+            display: none;
+        }
+    }
+    
+    .project_intro > li{
+        position: fixed; top: 0; right: -80%; 
+        display:block; width: 80%; height: 100%;  padding-bottom: $margin; box-sizing: border-box; 
+         background-color: #fff; overflow: auto; text-align: center;
+        transition: 0.5s;
+        &.active{
+            position: absolute; right: 0;box-shadow: 0 0 35px rgba(0,0,0,0.2);
+        }
+        img{
+            width: 80%;;
+        }
+        h3{
+            display: block; 
+            font-size: $titlesize;line-height: 2rem;
+            padding-top: $margin; padding-bottom: $margin; background-color: #aaa; color: #fff; letter-spacing: 8px;
+        }
+        .used{
+            display: flex;
+            padding: $margin;
+            li{
+                flex: 1;
+                h4{
+                    color: #000;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: #333;
+                }
+            }
+            
+        }
+        a{
+            display: block; margin: 0 auto;
+            width: 300px; height: 50px; font-size: $textsize; line-height: 50px; background-color: #aaa; color: #fff;
+        }
+    }
+
+}
+/* ======================desktop==========================*/
+
+/* ======================tablet & moblie==========================*/
+@media screen and (max-width:1023px){
+    .project_list{
+        width: 100%;
+        padding-top: 50px;
+        text-align: center; 
+        li{
+            margin: 20px auto;
+            a{
+                display: block;
+                width: 300px; height: 100%; text-align: 30px; background-color: rgba(255, 255, 255, 0.4); margin: 0 auto; border: 3px solid #fff;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.2); font-size: $textsize;
+                &:hover{
+                    color: #888;
+                }
+                .sub{
+                    font-size: $titlesize;
+                }
+            }
+        }
+    }
+
+    .cbtn {
+        position: absolute; top:-50px; left:13%;
+        width: 40px; transition: 0.3s; 
+        &.active{
+            position: absolute; top: 15px; transition-delay: 0.3s;
+        }
+        .return img{
+            width: 100%;
+        }
+        .mobilereturn img{
+            width: 100%;
+        }
+    }
+    
+    .project_intro > li{
+        position: fixed; top: 0; right: -80%; 
+        display:block; width: 80%; height: 100%;  padding-bottom: $margin; box-sizing: border-box; 
+         background-color: #fff; overflow: auto; text-align: center;
+        transition: 0.5s;
+        &.active{
+            position: absolute; right: 0;box-shadow: 0 0 35px rgba(0,0,0,0.2);
+        }
+        img{
+            width: 80%;
+        }
+        h3{
+            display: block; 
+            font-size: $titlesize;line-height: 2rem;
+            padding-top: $margin; padding-bottom: $margin; background-color: #aaa; color: #fff; letter-spacing: 8px;
+        }
+        .used{
+            display: flex;
+            padding: $margin;
+            li{
+                flex: 1;
+                h4{
+                    color: #000;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: #333;
+                }
+            }
+            
+        }
+        a{
+            display: block; margin: 0 auto;
+            width: 300px; height: 50px; font-size: $textsize; line-height: 50px; background-color: #aaa; color: #fff;
+        }
     }
 }
+/* ======================tablet & moblie==========================*/
+
+
+/* ======================only mobile==========================*/
+@media screen and (max-width: 767px){
+    .project_list{
+        width: 100%;
+        padding-top: 1rem;
+        text-align: center; 
+        li{
+            margin: 20px auto;
+            a{
+                display: block;
+                width: 90%; height: 100%; text-align: 30px; background-color: rgba(255, 255, 255, 0.4); margin: 0 auto; border: 3px solid #fff;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.2); font-size: $textsize;
+                .sub{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .cbtn {
+        position: absolute; top:120%; left: 50%; transform: translateX(-50%);
+        width: 2rem; transition: 0.3s; 
+        &.active{
+            position: absolute; top: 93%; transition-delay: 0.3s;
+        }
+        .return{
+            display: none;
+        }
+        .mobilereturn{
+            width: 100%;
+        }
+    }
+    
+    
+    .project_intro > li{
+        position: fixed; top: -100%; left: 0;
+        display:block; width: 100%; height: 90%;  padding-bottom: $margin; box-sizing: border-box; 
+        background-color: #fff; overflow: auto; text-align: center; 
+        transition: 0.5s;
+        &.active{
+            position: absolute; top: 0; left: 0; ;box-shadow: 0 0 35px rgba(0,0,0,0.2);
+        }
+        img{
+            width: 80%;;
+        }
+        h3{
+            display: block; 
+            font-size: $textsize; line-height: 1.5rem;
+            padding-top: 1rem; padding-bottom: 1rem; background-color: #aaa; color: #fff; letter-spacing: 0;
+        }
+        .used{
+            display: flex;
+            padding: 1vh; box-sizing: border-box;
+            li{
+                flex: 1; margin: 1.9rem auto;
+                h4{
+                    color: #000;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 0.9rem;; color: #333;
+                }
+            }
+            
+        }
+        a{
+            display: block; margin: 0 auto;
+            width: 80%; height: 50px; font-size: $textsize; line-height: 50px; background-color: #aaa; color: #fff;
+        }
+    }
+}
+/* ======================only mobile==========================*/

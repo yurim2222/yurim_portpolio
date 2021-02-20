@@ -86,7 +86,7 @@ html,body{
 }
 
 #list {
-  width: 100%; height: 100%; min-height: 800px;
+  width: 100%; height: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -97,7 +97,7 @@ html,body{
 /* 추가 */
 #list .arrow{
     position: absolute; top: 30px; left: 50%; transform: translate(-50%);
-    width: 4rem;
+    width: 5vw;
 }
 #list .arrow img{
     width: 100%;
@@ -108,13 +108,13 @@ html,body{
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 #list li a {
   display: block;
-  padding: 6px 30px 3px;
+  padding-bottom: 5px;
 }
 
 
@@ -155,7 +155,7 @@ html,body{
 
 
 
-/* ======================tablet & moblie==========================*/
+/* ======================desktop==========================*/
 @media screen and (min-width:1024px){
     /* 메인글 */
     h1{
@@ -206,13 +206,13 @@ html,body{
       content: attr(data-hover);
     }
 }
-/* ======================tablet & moblie==========================*/
+/* ======================desktop==========================*/
 
 /* ======================tablet & moblie==========================*/
 @media screen and (max-width:1023px){
     /* 메인글 */
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
     } 
     /* click img */
     .main .click {
@@ -226,16 +226,44 @@ html,body{
 @media screen and (max-width: 767px){
     /* 메인글 */
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     } 
+    .main img {
+      width: 100%;
+    }
     /* click img */
     .main .click {
       width: 3.5rem;
     }
-    .main img {
-      width: 25rem;
+    /* list */
+    #list li a{
+      display: block;
+      width: 100%;
     }
+    #list li .first,
+    #list li .second{
+      font-size: 1.3rem;
+    }
+    
     
     
 }
 /* ======================only mobile==========================*/
+
+/* ======================only iphone5==========================*/
+@media screen and (max-width: 321px){
+  /* 메인글 */
+  h1{
+      font-size: 1.8rem;
+  } 
+  .main img {
+    width: 100%;
+  }
+  /* click img */
+  .main .click {
+    width: 3rem;
+  }
+  
+  
+}
+/* ======================only iphone5==========================*/
