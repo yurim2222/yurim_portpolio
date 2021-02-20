@@ -1,19 +1,70 @@
-@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@font-face { font-family: 'S-CoreDream-3Light'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-* { font-family: "S-CoreDream-3Light"; }
+* {
+  font-family: "S-CoreDream-3Light";
+}
 
-html, body { background-color: rgba(219, 219, 219, 0.534); }
+html, body {
+  background-color: #fff;
+}
 
-.intro { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-.intro .myphoto { width: 300px; height: 300px; border-radius: 150px; border-bottom-right-radius: 0; -webkit-box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.5); box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.5); -webkit-transform: rotate(-12deg); transform: rotate(-12deg); }
+.intro .myphoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border-bottom-right-radius: 0;
+  -webkit-box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.5);
+          box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.5);
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
 
-.text { width: calc( 100% - 500px); min-height: 300px; background-color: #fff; margin-left: 100px; padding: 30px; border-radius: 50px; border-top-left-radius: 0; border-bottom-right-radius: 0; -webkit-box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.3); box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.3); line-height: 30px; }
+.text {
+  width: calc( 100% - 500px);
+  min-height: 300px;
+  background-color: #fff;
+  margin-left: 100px;
+  padding: 30px;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.3);
+          box-shadow: 1px 1px 25px rgba(63, 26, 68, 0.3);
+  line-height: 30px;
+}
 
-.text img { float: left; width: 20px; height: 30px; clear: left; margin-right: 10px; }
+.text img {
+  float: left;
+  width: 20px;
+  height: 30px;
+  clear: left;
+  margin-right: 10px;
+}
 
-.text h3 { font-size: 21px; margin-bottom: 20px; }
+.text h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
 
-.text p { display: block; font-size: 17px; }
+.text p {
+  display: block;
+  font-size: 17px;
+}

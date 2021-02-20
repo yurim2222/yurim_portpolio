@@ -1,49 +1,241 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-* { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-a { text-decoration: none; color: #000; }
+a {
+  text-decoration: none;
+  color: #000;
+}
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
-.main { width: 100%; height: 100%; text-align: center; margin: 0 auto; background-color: #efd9f8; font-family: "Montserrat", sans-serif; }
+html,body{
+    width: 100%; height: 100%; overflow: hidden;
+}
 
-.main img { padding-top: 60px; width: 40%; }
+.main {
+  width: 100%; height: 100%; 
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
 
-.main h1 { width: 100%; text-align: center; font-size: 4rem; color: transparent; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; background-image: url(../images/main_text_clip.jpg); background-size: 150%; background-position: right center; background-repeat: no-repeat; -webkit-transition: 0.3s; transition: 0.3s; }
+.main img {
+  padding-top: 60px;
+  width: 35rem;
+}
 
-.main h1:hover { background-position: left bottom; }
+.main h1 {
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(../images/main_text_clip.jpg);
+  background-size: 200%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
-.main .click { position: relative; display: block; width: 60px; height: 70px; margin: 0 auto; background-image: url(../images/main_mouse.png); background-size: 60px; background-repeat: no-repeat; padding-left: 8px; padding-top: 70px; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-animation: click 0.8s infinite alternate; animation: click 0.8s infinite alternate; }
 
-@-webkit-keyframes click { from { top: 90px; }
-  to { top: 96px; } }
 
-.main .click:hover { background-image: url(../images/main_mouse_over.png); }
+.main .click {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  display: block;
+  background-image: url(../images/main_mouse.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left: 8px;
+  padding-top: 4.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: click 0.8s infinite alternate;
+          animation: click 0.8s infinite alternate;
+}
 
-.main .empty { margin-top: 210px; width: 1px; height: 1px; }
+@-webkit-keyframes click {
+  from {
+    bottom: 90px;
+  }
+  to {
+    bottom: 96px;
+  }
+}
 
-#list { position: relative; font-family: "Montserrat", sans-serif; font-size: 26px; width: 100%; height: 800px; text-align: center; margin: 0 auto; background-color: #fff4c4; }
 
-#list ul { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%); transform: translate(-50%); }
 
-#list li a { display: block; padding: 6px 30px 3px; }
+.main .empty {
+  margin-top: 210px;
+  width: 1px;
+  height: 1px;
+}
 
-#list li a:hover .first, #list li a:focus .first { -webkit-transform: translate3d(0, -105%, 0); transform: translate3d(0, -105%, 0); }
+#list {
+  width: 100%; height: 100%; min-height: 800px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #333;
+}
 
-#list li a:hover .second, #list li a:focus .second { -webkit-transform: translate3d(0, 105%, 0); transform: translate3d(0, 105%, 0); }
+/* 추가 */
+#list .arrow{
+    position: absolute; top: 30px; left: 50%; transform: translate(-50%);
+    width: 4rem;
+}
+#list .arrow img{
+    width: 100%;
+}
+/*추가*/
 
-#list li .menu__title { display: inline-block; overflow: hidden; }
+#list ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
 
-#list li .first, #list li .second { display: inline-block; position: relative; -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
+#list li a {
+  display: block;
+  padding: 6px 30px 3px;
+}
 
-#list li .first::before, #list li .second::before { position: absolute; content: attr(data-hover); }
 
-#list li .first { color: #000; }
 
-#list li .first::before { top: 105%; color: #888; }
 
-#list li .second { color: #888; }
+#list li .menu__title {
+  display: inline-block;
+  overflow: hidden;
+}
 
-#list li .second::before { bottom: 105%; color: #000; }
+
+#list li .first,
+#list li .second {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+
+/* 변경 */
+#list li .first {
+  color: #fff;
+  font-size: 2rem;
+}
+
+
+
+#list li .second {
+  color: #FBD872;
+  font-size: 2rem;
+}
+
+
+/* 변경 */
+
+
+
+/* ======================tablet & moblie==========================*/
+@media screen and (min-width:1024px){
+    /* 메인글 */
+    h1{
+        font-size: 4rem;
+    } 
+    
+    .main h1:hover {
+      background-position: left bottom;
+    }
+
+    /* click img */
+    .main .click {
+      width: 4rem;
+    }
+    
+    .main .click:hover {
+      background-image: url(../images/main_mouse_over.png);
+    }
+    
+    
+    
+    /* list */
+    #list li a:hover .first, #list li a:focus .first {
+      -webkit-transform: translate3d(0, -105%, 0);
+              transform: translate3d(0, -105%, 0);
+    }
+
+    #list li a:hover .second, #list li a:focus .second {
+      -webkit-transform: translate3d(0, 105%, 0);
+              transform: translate3d(0, 105%, 0);
+    }
+    
+    #list li .first::before {
+      top: 105%;
+      color: #FBD872;
+      font-size: 2rem;
+    }
+    
+    #list li .second::before {
+      bottom: 105%;
+      color: #fff;
+      font-size: 2rem;
+    }
+    
+    #list li .first::before,
+    #list li .second::before {
+      position: absolute;
+      content: attr(data-hover);
+    }
+}
+/* ======================tablet & moblie==========================*/
+
+/* ======================tablet & moblie==========================*/
+@media screen and (max-width:1023px){
+    /* 메인글 */
+    h1{
+        font-size: 4rem;
+    } 
+    /* click img */
+    .main .click {
+      width: 4rem;
+    }
+}
+/* ======================tablet & moblie==========================*/
+
+
+/* ======================only mobile==========================*/
+@media screen and (max-width: 767px){
+    /* 메인글 */
+    h1{
+        font-size: 2.5rem;
+    } 
+    /* click img */
+    .main .click {
+      width: 3.5rem;
+    }
+    .main img {
+      width: 25rem;
+    }
+    
+    
+}
+/* ======================only mobile==========================*/
