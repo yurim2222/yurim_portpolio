@@ -70,10 +70,10 @@ html,body{
 
 @-webkit-keyframes click {
   from {
-    bottom: 90px;
+    top: 570px;
   }
   to {
-    bottom: 96px;
+    top: 590px;
   }
 }
 
@@ -229,7 +229,7 @@ html,body{
         font-size: 2rem;
     } 
     .main img {
-      width: 100%;
+      width: 80%;
     }
     /* click img */
     .main .click {

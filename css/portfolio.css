@@ -60,7 +60,7 @@
   .project_intro > li.active { position: absolute; top: 0; left: 0; -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.2); box-shadow: 0 0 35px rgba(0, 0, 0, 0.2); }
   .project_intro > li img { width: 80%; }
   .project_intro > li h3 { display: block; font-size: 1rem; line-height: 1.5rem; padding-top: 1rem; padding-bottom: 1rem; background-color: #aaa; color: #fff; letter-spacing: 0; }
-  .project_intro > li .used { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1vh; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .project_intro > li .used { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1vh; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .project_intro > li .used li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin: 1.9rem auto; }
   .project_intro > li .used li h4 { color: #000; margin-bottom: 10px; }
   .project_intro > li .used li p { font-size: 0.9rem; color: #333; }

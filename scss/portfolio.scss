@@ -226,7 +226,8 @@ $margin : 40px;
         }
         .used{
             display: flex;
-            padding: 1vh; box-sizing: border-box;
+            flex-wrap: wrap;
+            padding: 10px; box-sizing: border-box;
             li{
                 flex: 1; margin: 1.9rem auto;
                 h4{
