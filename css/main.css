@@ -33,12 +33,13 @@ html,body{
 }
 
 .main img {
-  padding-top: 60px;
-  width: 35rem;
+  padding-top: 6rem;
+  width: 30rem;
 }
 
 .main h1 {
   width: 100%;
+  margin-bottom: 2rem;
   text-align: center;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -70,10 +71,10 @@ html,body{
 
 @-webkit-keyframes click {
   from {
-    top: 570px;
+    bottom: 90px;
   }
   to {
-    top: 590px;
+    bottom: 96px;
   }
 }
 
@@ -137,21 +138,65 @@ html,body{
 }
 
 
-/* 변경 */
+
 #list li .first {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 
 
 #list li .second {
   color: #FBD872;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 
-/* 변경 */
+.typingText {
+  display: none;
+}
+
+.typingText ul {
+  list-style: none;
+}
+
+.typing {
+  font-family: 'S-CoreDream-5Medium';
+  color: #333;
+  font-size: 1.5rem;
+  display: inline-block;
+  -webkit-animation-name: cursor;
+          animation-name: cursor;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
 
 
 
@@ -159,7 +204,7 @@ html,body{
 @media screen and (min-width:1024px){
     /* 메인글 */
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
     } 
     
     .main h1:hover {
@@ -168,7 +213,7 @@ html,body{
 
     /* click img */
     .main .click {
-      width: 4rem;
+      width: 3rem;
     }
     
     .main .click:hover {
@@ -191,13 +236,13 @@ html,body{
     #list li .first::before {
       top: 105%;
       color: #FBD872;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     
     #list li .second::before {
       bottom: 105%;
       color: #fff;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     
     #list li .first::before,
@@ -229,7 +274,7 @@ html,body{
         font-size: 2rem;
     } 
     .main img {
-      width: 80%;
+      width: 100%;
     }
     /* click img */
     .main .click {
