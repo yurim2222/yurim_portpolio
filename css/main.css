@@ -39,7 +39,7 @@ html,body{
 
 .main h1 {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -71,10 +71,10 @@ html,body{
 
 @-webkit-keyframes click {
   from {
-    bottom: 90px;
+    bottom: 70px;
   }
   to {
-    bottom: 96px;
+    bottom: 76px;
   }
 }
 

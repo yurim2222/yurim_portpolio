@@ -10,7 +10,7 @@ $(document).ready(function(){
 //portpolio
 $(document).ready(function(){
     var list = '.project_list li';
-    var view = '.project_intro li';
+    var view = '.project_intro > li';
     var btn = '.cbtn';
 
     $(list).find('a').click(function(){
