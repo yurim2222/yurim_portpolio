@@ -98,7 +98,7 @@ html,body{
 /* 추가 */
 #list .arrow{
     position: absolute; top: 30px; left: 50%; transform: translate(-50%);
-    width: 5vw;
+    width: 3rem;
 }
 #list .arrow img{
     width: 100%;
@@ -261,7 +261,7 @@ html,body{
     } 
     /* click img */
     .main .click {
-      width: 4rem;
+      width: 3rem;
     }
 }
 /* ======================tablet & moblie==========================*/

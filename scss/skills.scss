@@ -1,0 +1,113 @@
+
+.skills{
+    table{
+        width: 90%; text-align: center; margin: 0 auto;
+        border-top: 1px solid #333; border-bottom: 1px solid #333;
+        img{
+            height:50px; 
+        }
+        tr{
+            th{
+                width: 30%;
+            }
+            th,td{
+                border-bottom: 1px solid #333; padding: 20px; box-sizing: border-box;
+                border-spacing: 0; font-size: 1rem;
+            }
+            &:first-child{
+                height: 100px;  
+                th,td{
+                    font-size: 1.6rem; font-weight: 800;
+                }
+            }
+            &:nth-child(2){
+                height: 100px; 
+            }
+            &:nth-child(3){
+                height: 80px; font-size: 20px;
+                ul{
+                    display: block; width:450px; height: 50px; margin: 0 auto;
+                    li{
+                        float: left; margin-bottom: 20px;
+                        img{ 
+                            margin: 0 50px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(4){
+                font-size: 20px; 
+                .html{
+                    height: 70px;
+                }
+            }
+            &:nth-child(5){
+                font-size: 20px; 
+                th,td{
+                    border: none;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skills{
+        table{
+            tr{
+                th{
+                    display: none;
+                }
+                &:first-child{
+                    display: none;
+                }
+                &:nth-child(2){
+                    height: 100px; 
+                }
+                &:nth-child(3){
+                    height: 80px; font-size: 20px;
+                    ul{    
+                        width: 250px; display: flex;              
+                        li{     
+                            flex: 1;                       
+                            img{ 
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills{
+        overflow-x: auto;
+        table{
+            width: 300px;
+            tr, td{
+                padding: 0; padding-top: 20px;
+            }
+            tr{
+                th{
+                    display: none;
+                }
+                &:first-child{
+                    display: none;
+                }
+                &:nth-child(2){
+                    height: 70px; 
+                    tr{
+                        height: 50px;
+                    }
+                }
+                &:nth-child(3){
+                    height: 50px; 
+                }
+                
+            }
+        }
+    }
+}
